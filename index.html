@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">   
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculator dark">
+            <div onclick="darkTheme()" class="theme-toggler">
+                <i class="toggler-icon"></i>
+            </div>
+            <div id="result">
+                <div id="ownerTag">
+                    <p id="owner-value">Sharon's Calculator</p>
+                </div>
+                <div id="output">
+                    <input type="text" class="screensp" id="outputValue">
+                </div>
+            </div>
+            <div class="buttons">
+                 <!-- first row -->
+               <input type ="button" onClick="clearScreen()" class="clear" id="clean" value = "c" >
+               <input type ="button" onClick="percent()"class="operator" value="%">
+               <input type ="button"onClick="display('/')" class="operator" value="&#247">
+
+                <!-- second row -->
+               <input type ="button" onClick="display('7')"class="number" value="7">
+               <input type ="button" onClick="display('8')" class="number" value="8">
+               <input type ="button" onClick="display('9')"class="number" value="9">
+               <input type ="button" onClick="display('*')" class="operator" value="&times">
+
+                 <!-- third row -->
+               <input type ="button" onClick="display('4')"class="number" value="4">
+               <input type ="button" onClick="display('5')"class="number" value="5">
+               <input type ="button" onClick="display('6')"class="number" value="6">
+               <input type ="button" onClick="display('-')"class="operator" value="-">
+
+                <!-- fourth row -->
+               <input type ="button" onClick="display('1')"class="number" value="1">
+               <input type ="button" onClick="display('2')"class="number" value="2">
+               <input type ="button" onClick="display('3')"class="number" value="3">
+               <input type ="button" onClick="display('+')"class="operator" value="+">
+
+                <!-- fifth row -->
+               <input type ="button" onClick="display('.')" class="entry" value=".">
+               <input type ="button" onClick="display('0')"class="number" value="0">
+               <!-- <button class="entry" id=")">)</button> -->
+               <input type ="button" onClick="solve()" id="two" class="operator" value="=">
+
+            </div>
+
+        </div>
+    </div>
+    <script src="calc.js"></script>
+</body>
+
+</html>
